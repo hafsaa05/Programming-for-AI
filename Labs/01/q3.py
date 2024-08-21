@@ -11,5 +11,3 @@ for i in range(num):
         count += 1
 
 print("Count of even numbers:", count)
-
-
