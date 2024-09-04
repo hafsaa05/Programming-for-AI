@@ -1,0 +1,5 @@
+Name: hafsa
+CNIC: 1234
+Age: 19
+Salary: 75000000000
+Contact Number: 123456789

@@ -1,0 +1,2 @@
+This hello searches for a specified word or phrase, and replaces
+all occurrences with another word or phrase
