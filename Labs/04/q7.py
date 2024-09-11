@@ -4,19 +4,17 @@ class Vehicle:
         self.capacity = capacity
     
     def fare(self):
-        fare = self.capacity*100
-        print(f"Total fare: {fare}")
+        Fare = self.capacity*100
+        return Fare
         
 class Bus(Vehicle):
     def __init__ (self, capacity):
         self.capacity = capacity
         
-    def fare(self):
-        fare = self.capacity*100 + self.capacity*100*0.01
-        print(f"Total fare: {fare}")
+    def bus_fare(self):
+        Bus_fare = self.fare() + (self.fare()*0.010)
+        print(f"Total fare: {Bus_fare}")
         
 bus = Bus(7)
-bus.fare()
-        
-        
-    
+print(bus.fare())
+bus.bus_fare()
