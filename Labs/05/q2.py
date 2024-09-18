@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 class shape:
     @abstractmethod    
-    def area(self, area):   
+    def area(self):   
         pass
     
 class rectangle(shape):
