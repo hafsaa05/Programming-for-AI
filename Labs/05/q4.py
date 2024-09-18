@@ -29,11 +29,7 @@ class result(marks):
          self.avg = self.total/3
          print(f"Average marks: {self.avg}") 
  
-stu = student("Hafsa", 64)
-stu.display_info()   
-
-mark = marks("Hafsa", 64, 86, 87, 88)
-mark.display_marks()
-
 res = result("Hafsa", 64, 86, 87, 88)
+res.display_info()   
+res.display_marks()
 res.display_result()
