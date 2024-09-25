@@ -1,5 +1,4 @@
 import pandas as pd
-
 data = {
     'movies': ['Deadpool', 'Pride & Prejudice', 'Glassworker', 'Harry Potter'],
     'revenue': [25000000, 15000000, 5000000, 1200000],
@@ -7,6 +6,6 @@ data = {
 }
 
 df = pd.DataFrame(data)
+sort = df.sort_values(by='budget' , ascending=False)
 
-filtered = df[(df['revenue'] > 2000000) & (df['budget'] < 1000000)]
-print(filtered)
+print(sort)
