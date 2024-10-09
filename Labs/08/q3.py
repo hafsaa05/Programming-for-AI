@@ -4,11 +4,11 @@
 import numpy as np
 
 arr = np.arange(2, 20, 2).reshape(3, 3)
-print(f'Array: {arr}')
+print(f'Array:\n{arr}')
 
-mul_arr = (arr*4).reshape(3,3)
-print(f'Multiplied array: {mul_arr}')
+mul_arr = np.multiply(arr, 4)
+print(f'Multiplied array:\n{mul_arr}')
 
-res = mul_arr*(np.eye(3))
-print(f'Resultant matrix: {res}')
-        
+identity = np.eye(3)
+res = np.multiply(mul_arr, identity)
+print(f'Resultant matrix:\n{res}')
