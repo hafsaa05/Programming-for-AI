@@ -3,15 +3,12 @@
 # hardcoded).
 import numpy as np
 
-arr = np.arange(2, 20, 2)
-new_arr = arr.reshape(3, 3)
-print(f'Array: {new_arr}')
+arr = np.arange(2, 20, 2).reshape(3, 3)
+print(f'Array: {arr}')
 
-mul_arr = arr*4
-mul_arr = mul_arr.reshape(3,3)
+mul_arr = (arr*4).reshape(3,3)
 print(f'Multiplied array: {mul_arr}')
 
-identity = np.eye(3)
-res = mul_arr*identity
+res = mul_arr*(np.eye(3))
 print(f'Resultant matrix: {res}')
         
