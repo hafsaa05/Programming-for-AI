@@ -1,0 +1,87 @@
+import numpy as np
+
+# Creating NumPy Arrays
+arr1 = np.array([1, 2, 3, 4, 5])  # 1D array
+arr2 = np.array([[1, 2], [3, 4], [5, 6]])  # 2D array
+print(arr1)
+print(arr2)
+
+# Check array dimensions and shape
+print(arr1.ndim)  # Dimensions of arr1
+print(arr2.shape)  # Shape of arr2 (rows, columns)
+
+# Creating arrays with default values
+zeros = np.zeros((3, 3))  # 3x3 array of zeros
+ones = np.ones((2, 2))  # 2x2 array of ones
+print(zeros)
+print(ones)
+
+# Creating arrays with a range of values
+arange_arr = np.arange(0, 10, 2)  # Array with values 0 to 10 with a step of 2
+print(arange_arr)
+
+# Creating arrays with random values
+rand_arr = np.random.rand(3, 3)  # 3x3 array with random values (0 to 1)
+randint_arr = np.random.randint(0, 100, 5)  # Array with 5 random integers (0 to 100)
+print(rand_arr)
+print(randint_arr)
+
+# Reshaping arrays
+reshaped_arr = np.reshape(arr2, (2, 3))  # Reshape arr2 to 2x3 array
+print(reshaped_arr)
+
+# Element-wise operations
+arr3 = np.array([10, 20, 30, 40, 50])
+print(arr1 + arr3)  # Addition
+print(arr1 * arr3)  # Multiplication
+print(arr1 - arr3)  # Subtraction
+print(arr3 / arr1)  # Division
+
+# Statistical operations
+print(np.sum(arr1))  # Sum of elements
+print(np.mean(arr1))  # Mean of elements
+print(np.min(arr1))  # Minimum value
+print(np.max(arr1))  # Maximum value
+
+# Indexing and slicing
+print(arr1[1:4])  # Slicing elements from index 1 to 3
+print(arr2[1, 0])  # Accessing specific element (row 1, column 0)
+
+# Transposing arrays
+transposed_arr = np.transpose(arr2)
+print(transposed_arr)
+
+# Stacking arrays
+arr4 = np.array([[7, 8], [9, 10]])
+stacked_arr = np.vstack((arr2, arr4))  # Stack arrays vertically
+print(stacked_arr)
+
+# Linear algebra operations
+matrix = np.array([[1, 2], [3, 4]])
+det = np.linalg.det(matrix)  # Determinant of the matrix
+inv = np.linalg.inv(matrix)  # Inverse of the matrix
+print(det)
+print(inv)
+
+# Broadcasting example (scaling each element)
+scaled_arr = arr1 * 2
+print(scaled_arr)
+
+# Random seeding (fixing randomness)
+np.random.seed(42)
+fixed_rand_arr = np.random.rand(3, 3)  # Consistent random values
+print(fixed_rand_arr)
+
+# Searching and sorting
+index_of_30 = np.where(arr3 == 30)  # Find index of the value 30
+sorted_arr = np.sort(arr3)  # Sort the array in ascending order
+print(index_of_30)
+print(sorted_arr)
+
+# Splitting arrays
+split_arr = np.array_split(arr3, 3)  # Split arr3 into 3 parts
+print(split_arr)
+
+# Joining arrays
+joined_arr = np.concatenate((arr1, arr3))  # Concatenate arr1 and arr3
+print(joined_arr)
