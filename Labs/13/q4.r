@@ -12,4 +12,4 @@ Tax <- function(income) {
 
 income <- as.numeric(readline("Enter the annual income: "))
 tax_due <- Tax(income)
-cat("The applicable tax is: $", tax_due, "\n")
+cat("Your tax liability is: $", tax_due, "\n")
